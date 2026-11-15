@@ -1,0 +1,54 @@
+body {
+  font-family: 'playfair-display', sans-serif;
+  color: #172432;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.page-top {
+  background: url('../img/Hero Section.jpg') center / cover no-repeat;
+}
+.container {
+  max-width: 1556px;
+}
+.header,
+.hero {
+  background: transparent;
+}
+h1 {
+  font-size: 84px;
+  color: #fff;
+}
+h2 {
+  color: #172432;
+  font-size: 64px;
+}
+h3 {
+  color: #172432;
+  font-size: 54px;
+}
+.slide-control {
+  display: flex;
+  gap: 40px;
+}
+.control-btn {
+  width: 60px;
+  height: 66px;
+  color: #fff;
+  border-radius: 20px;
+}

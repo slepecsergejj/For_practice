@@ -1,0 +1,10 @@
+.destinations-gallery {
+  display: flex;
+}
+.destinations-gallery-img {
+  display: flex;
+  gap: 32px;
+}
+.container {
+  max-width: 1020px;
+}
