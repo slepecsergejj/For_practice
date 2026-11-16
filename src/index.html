@@ -15,19 +15,19 @@
   <body>
     <div class="page-top">
       <header id="header" class="header container">
-        <div class="site-icon">
-          <svg class="icon-img" width="24" height="27">
+        <a class="site-logo" href="#hero" aria-label="Travellian — Home">
+          <svg class="icon-img" width="24" height="27" aria-hidden="true">
             <use href="./img/icons.svg#icon-img"></use>
           </svg>
-          <p class="icon-name">Travellian</p>
-        </div>
+          <span class="icon-name">Travellian</span>
+        </a>
         <nav class="header-nav">
           <ul>
-            <a class="header-nav-link active" href="#hero">Home</a>
-            <a class="header-nav-link" href="#destinations">Explore</a>
-            <a class="header-nav-link" href="#trip-planners">Travel</a>
-            <a class="header-nav-link" href="#blog">Blog</a>
-            <a class="header-nav-link" href="special-offer">Pricing</a>
+            <li class="header-nav-link active"><a href="#hero">Home</a></li>
+            <li class="header-nav-link"><a href="#destinations">Explore</a></li>
+            <li class="header-nav-link"><a href="#trip-planners">Travel</a></li>
+            <li class="header-nav-link"><a href="#blog">Blog</a></li>
+            <li class="header-nav-link"><a href="special-offer">Pricing</a></li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -38,182 +38,194 @@
       <section id="hero" class="hero container">
         <h1 class="hero-title">Start your unforgettable journey with us.</h1>
         <p class="hero-subtitle">The best travel for your jouney begins now</p>
-        <form class="check-ticket" action=""></form>
+        <form class="check-ticket"></form>
       </section>
     </div>
-    <section id="destinations " class="destinations container">
-      <h2 class="destinations-title">Popular Destinations</h2>
-      <p class="destinations-subtitle">
-        Most popular destinations around the world, from historical places to
-        natural wonders.
-      </p>
+    <main>
+      <section id="destinations" class="destinations container">
+        <h2 class="destinations-title">Popular Destinations</h2>
+        <p class="destinations-subtitle">
+          Most popular destinations around the world, from historical places to
+          natural wonders.
+        </p>
 
-      <div class="destinations-gallery">
-        <div class="destinations-gallery-img">
-          <img src="./img/Destination-1.jpg" alt="Berlin" />
-          <img src="./img/Destination-2.jpg" alt="London" />
-          <img src="./img/Destination-3.jpg" alt="Italy" />
-          <img src="./img/Destination-4.png" alt="Portugal" />
+        <div class="destinations-gallery">
+          <div class="destinations-gallery-img">
+            <img src="./img/Destination-1.jpg" alt="Berlin" />
+            <img src="./img/Destination-2.jpg" alt="London" />
+            <img src="./img/Destination-3.jpg" alt="Italy" />
+            <img src="./img/Destination-4.png" alt="Portugal" />
+          </div>
+          <div class="slide-control">
+            <button class="control-btn">
+              <svg class="control-left" width="24" height="27">
+                <use href="./img/icons.svg#icon-slide-left"></use>
+              </svg>
+            </button>
+            <button class="control-btn">
+              <svg class="control-right" width="24" height="27">
+                <use href="./img/icons.svg#icon-slide-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="slide-control">
-          <button class="control-btn">
-            <svg class="control-left" width="24" height="27">
-              <use href="./img/icons.svg#icon-slide-left"></use>
-            </svg>
-          </button>
-          <button class="control-btn">
-            <svg class="control-right" width="24" height="27">
-              <use href="./img/icons.svg#icon-slide-right"></use>
-            </svg>
-          </button>
+      </section>
+      <section id="special-offer" class="special-offer container">
+        <h2 class="special-offer-title">Special Offer</h2>
+        <p class="special-offer-subtitle">
+          Check out our special offer and discounts
+        </p>
+        <div class="special-offer-gallery">
+          <div class="special-offer-gallery-img">
+            <ul>
+              <li><img src="./img/Special-1.jpg" alt="Portugal" /></li>
+              <li><img src="./img/Special-2.jpg" alt="Greece" /></li>
+              <li><img src="./img/Special-3.jpg" alt="Italy" /></li>
+            </ul>
+          </div>
+          <div class="slide-control">
+            <button class="control-btn">
+              <svg class="control-left" width="24" height="27">
+                <use href="./img/icons.svg#icon-slide-left"></use>
+              </svg>
+            </button>
+            <button class="control-btn">
+              <svg class="control-right" width="24" height="27">
+                <use href="./img/icons.svg#icon-slide-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="special-offer" class="special-offer container">
-      <h2 class="special-offer-title">Special Offer</h2>
-      <p class="special-offer-subtitle">
-        Check out our special offer and discounts
-      </p>
-      <div class="special-offer-gallery">
-        <div class="special-offer-gallery-img">
-          <ul>
-            <li><img src="./img/Special-1.jpg" alt="Portugal" /></li>
-            <li><img src="./img/Special-2.jpg" alt="Greece" /></li>
-            <li><img src="./img/Special-3.jpg" alt="Italy" /></li>
+      </section>
+      <section id="blog" class="blog container">
+        <h2 class="blog-title">Our Blog</h2>
+        <p class="blog-subtitle">
+          An insight the incredible experience in the world
+        </p>
+        <div class="blog-content">
+          <img src="./img/Blog.jpg" alt="Blog-image" />
+          <div class="blog-content-text">
+            <h3 class="blog-content-title">
+              Beautiful Italy<br />Let’s travel
+            </h3>
+            <p class="blog-content-subtitle">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness. No one rejects, dislike, or avoids plasure itself,
+              because it is pleasure, but because those who do not know how to
+              pursue pleasure rationally encounter consequences that are
+              extremly painful. Nor again is there anyone who loves or pursues.
+            </p>
+            <a class="blog-content-link" href="#">Read more</a>
+          </div>
+        </div>
+      </section>
+      <section id="trip-planners" class="trip-planners container">
+        <div class="trip-planners-content">
+          <h2 class="trip-planners-title">Trip Planners</h2>
+          <p class="trip-planners-subtitle">
+            20 years from now you will be more disappointed by the things that
+            you didn’t do. Stop regretting and start travelling, start throwing
+            off the bowlines.
+          </p>
+        </div>
+        <div class="trip-planners-wrapper">
+          <ul class="trip-planners-gallery">
+            <li class="trip-gallery-item">
+              <img src="./img/Trip-1.jpg" alt="Roma" />
+            </li>
+            <li class="trip-gallery-item">
+              <img src="./img/Trip-2.jpg" alt="Paris" />
+            </li>
+            <li class="trip-gallery-item">
+              <img src="./img/Trip-3.jpg" alt="Barcelona" />
+            </li>
+            <li class="trip-gallery-item">
+              <img src="./img/Trip-4.jpg" alt="Budapest" />
+            </li>
           </ul>
         </div>
-        <div class="slide-control">
-          <button class="control-btn">
-            <svg class="control-left" width="24" height="27">
-              <use href="./img/icons.svg#icon-slide-left"></use>
-            </svg>
-          </button>
-          <button class="control-btn">
-            <svg class="control-right" width="24" height="27">
-              <use href="./img/icons.svg#icon-slide-right"></use>
-            </svg>
-          </button>
+      </section>
+      <section class="gallery container">
+        <h2 class="gallery-title">Destination Gallery</h2>
+        <p class="gallery-text">Our photo gallery on trip</p>
+        <div class="gallery-wrapper">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img src="./img/Gallery-1.jpg" alt="gallery photo" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/Gallery-2.jpg" alt="gallery photo" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/Gallery-3.jpg" alt="gallery photo" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/Gallery-4.jpg" alt="gallery photo" />
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
-    <section id="blog" class="blog container">
-      <h2 class="blog-title">Our Blog</h2>
-      <p class="blog-subtitle">
-        An insight the incredible experience in the world
-      </p>
-      <div class="blog-content">
-        <img src="./img/Blog.jpg" alt="Blog-image" />
-        <div class="blog-content-text">
-          <h3 class="blog-content-title">Beautiful Italy<br />Let’s travel</h3>
-          <p class="blog-content-subtitle">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness. No
-            one rejects, dislike, or avoids plasure itself, because it is
-            pleasure, but because those who do not know how to pursue pleasure
-            rationally encounter consequences that are extremly painful. Nor
-            again is there anyone who loves or pursues.
-          </p>
-          <a class="blog-content-link" href="#">Read more</a>
+      </section>
+      <section class="testimonial container">
+        <h2 class="travel-title">Traveler’s Experiences</h2>
+        <p class="travel-text">Here some awesome feedback from our travelers</p>
+        <div class="travel-wrappper">
+          <div class="travel-card">
+            <img class="card-icon" src="./img/John-Doe.jpg" alt="John Doe" />
+            <p class="card-text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </p>
+            <p class="card-siganature">John Doe</p>
+            <p class="card-position">Accountant</p>
+          </div>
+          <div class="travel-card">
+            <img
+              class="card-icon"
+              src="./img/John-Smith.jpg"
+              alt="John Smith"
+            />
+            <p class="card-text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </p>
+            <p class="card-siganature">John Smith</p>
+            <p class="card-position">Journalist, HWO News</p>
+          </div>
+          <div class="travel-card">
+            <img
+              class="card-icon"
+              src="./img/Tamara-Bellis.jpg"
+              alt="Tamara Bellis"
+            />
+            <p class="card-text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </p>
+            <p class="card-siganature">Tamara Bellis</p>
+            <p class="card-position">Managing Director, JTH</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="trip-planners" class="trip-planners container">
-      <div class="trip-planners-content">
-        <h2 class="trip-planners-title">Trip Planners</h2>
-        <p class="trip-planners-subtitle">
-          20 years from now you will be more disappointed by the things that you
-          didn’t do. Stop regretting and start travelling, start throwing off
-          the bowlines.
-        </p>
-      </div>
-      <div class="trip-planners-wrapper">
-        <ul class="trip-planners-gallery">
-          <li class="trip-gallery-item">
-            <img src="./img/Trip-1.jpg" alt="Roma" />
-          </li>
-          <li class="trip-gallery-item">
-            <img src="./img/Trip-2.jpg" alt="Paris" />
-          </li>
-          <li class="trip-gallery-item">
-            <img src="./img/Trip-3.jpg" alt="Barcelona" />
-          </li>
-          <li class="trip-gallery-item">
-            <img src="./img/Trip-4.jpg" alt="Budapest" />
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="gallery container">
-      <h2 class="gallery-title">Destination Gallery</h2>
-      <p class="gallery-text">Our photo gallery on trip</p>
-      <div class="gallery-wrapper">
-        <ul class="gallery-list">
-          <li class="gallery-item">
-            <img src="./img/Gallery-1.jpg" alt="gallery photo" />
-          </li>
-          <li class="gallery-item">
-            <img src="./img/Gallery-2.jpg" alt="gallery photo" />
-          </li>
-          <li class="gallery-item">
-            <img src="./img/Gallery-3.jpg" alt="gallery photo" />
-          </li>
-          <li class="gallery-item">
-            <img src="./img/Gallery-4.jpg" alt="gallery photo" />
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="testimonial container">
-      <h2 class="travel-title">Traveler’s Experiences</h2>
-      <p class="travel-text">Here some awesome feedback from our travelers</p>
-      <div class="travel-wrappper">
-        <div class="travel-card">
-          <img class="card-icon" src="./img/John-Doe.jpg" alt="John Doe" />
-          <p class="card-text">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
-          </p>
-          <p class="card-siganature">John Doe</p>
-          <p class="card-position">Accountant</p>
-        </div>
-        <div class="travel-card">
-          <img class="card-icon" src="./img/John-Smith.jpg" alt="John Smith" />
-          <p class="card-text">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
-          </p>
-          <p class="card-siganature">John Smith</p>
-          <p class="card-position">Journalist, HWO News</p>
-        </div>
-        <div class="travel-card">
-          <img
-            class="card-icon"
-            src="./img/Tamara-Bellis.jpg"
-            alt="Tamara Bellis"
-          />
-          <p class="card-text">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
-          </p>
-          <p class="card-siganature">Tamara Bellis</p>
-          <p class="card-position">Managing Director, JTH</p>
-        </div>
-      </div>
-    </section>
-    <section class="Newsletter container">
-      <h2 class="newsletter-title">Our Newsletter</h2>
-      <label for="email">Email</label>
-      <input type="email" name="newsletter-email" id="newsletter-email" />
-      <button class="newsletter-btn" type="submit">Subscribe</button>
-    </section>
+      </section>
+      <section class="Newsletter container">
+        <h2 class="newsletter-title">Our Newsletter</h2>
+        <label for="newsletter-email">Email</label>
+        <input type="email" name="newsletter-email" id="newsletter-email" />
+        <button class="newsletter-btn" type="submit">Subscribe</button>
+      </section>
+    </main>
+
     <footer class="footer container">
       <div class="site-icon">
         <svg class="icon-img" width="24" height="27">
@@ -225,13 +237,13 @@
         Copyright © Travellian 2020 All rights reserved
       </p>
       <div class="footer-menu">
+        <p class="footer-menu-title">Menu</p>
         <ul class="footer-menu-list">
-          Menu
           <li class="footer-menu-item"><a href="#hero">Home</a></li>
           <li class="footer-menu-item"><a href="#destinations">Explore</a></li>
           <li class="footer-menu-item"><a href="#trip-planners">Travel</a></li>
           <li class="footer-menu-item"><a href="#blog">Blog</a></li>
-          <li class="footer-menu-item"><a href="special-offer">Pricing</a></li>
+          <li class="footer-menu-item"><a href="#special-offer">Pricing</a></li>
         </ul>
       </div>
       <div class="footer-info">
@@ -243,8 +255,8 @@
         </ul>
       </div>
       <div class="footer-contact">
+        <p class="footer-menu-title">Contact Info</p>
         <ul class="footer-contact-list">
-          Contact Info
           <li class="footer-contact-item"><a href="">+123 456 789</a></li>
           <li class="footer-contact-item">
             <a href="">info@travellian.com</a>
@@ -255,8 +267,8 @@
         </ul>
       </div>
       <div class="footer-follow">
+        <p class="footer-menu-title">Follow us on</p>
         <ul class="footer-follow-list">
-          Follow us on
           <li class="footer follow-item"><a href=""></a></li>
           <li class="footer follow-item"><a href=""></a></li>
           <li class="footer follow-item"><a href=""></a></li>
