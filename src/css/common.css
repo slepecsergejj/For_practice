@@ -23,9 +23,6 @@ img {
 .page-top {
   background: url('../img/Hero Section.jpg') center / cover no-repeat;
 }
-.container {
-  max-width: 1556px;
-}
 .header,
 .hero {
   background: transparent;
@@ -33,15 +30,19 @@ img {
 h1 {
   font-size: 84px;
   color: #fff;
+  font-weight: 400;
 }
 h2 {
-  color: #172432;
   font-size: 64px;
 }
 h3 {
-  color: #172432;
   font-size: 54px;
 }
+p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
 .slide-control {
   display: flex;
   gap: 40px;
